@@ -1127,6 +1127,17 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1800px) {
+
+    .publications_col,
+    .block-publications_col>.column {
+        flex         : none;
+        width        : 80%;
+        margin-left  : 8%;
+        margin-right : 8%;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     .stack-on-700,
@@ -2723,7 +2734,7 @@ td:last-child {
 }
 
 .text-huge-title {
-    --text-huge       : 9.4rem;
+    --text-huge       : 5.4rem;
     --text-multiplier : 1;
     font-family       : var(--font-2);
     font-weight       : 400;
@@ -3195,7 +3206,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-    padding-top : calc(9.5 * var(--space));
+    padding-top : calc(3.5 * var(--space));
     width       : 100%;
     position    : relative;
 }
@@ -3228,6 +3239,7 @@ img.u-pull-left {
 
 .s-intro__text h3 span {
     color : var(--color-2-light);
+    /*color : white;*/
 }
 
 .s-intro__text-huge {
@@ -3235,7 +3247,7 @@ img.u-pull-left {
     font-size        : var(--text-huge-size);
     line-height      : 1;
     letter-spacing   : -0.015em;
-    margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
+    margin-top       : calc(var(--text-huge-size) * 1);
     margin-bottom    : var(--vspace-1_25);
     color            : white;
 }
@@ -3247,7 +3259,8 @@ img.u-pull-left {
     aspect-ratio        : 1/1;
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.jpg);
+    /*background-color    : black;*/
+    background-image    : url(../images/exoplanet-blue-glow.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
